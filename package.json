@@ -1,0 +1,29 @@
+{
+  "name": "product-sync",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js",
+    "install-all": "npm install && npm install --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "dev": "",
+    "url": "git+https://github.com/Mi-Pod/product-sync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mi-Pod/product-sync/issues"
+  },
+  "homepage": "https://github.com/Mi-Pod/product-sync#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
